@@ -1,19 +1,18 @@
----
----
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    {% include header.html %}
-  </head>
+<html>
+
+  {% include head.html %}
+
   <body>
-    <div class="nav-toggle"><i class="fa fa-bars fa-2x"></i> Herring Cove </div>
-    <div id = "wrapper">
-      {%include navigation.html %}
-      <div class="container">
-        {{ content }}
-      </div>
-      {% include footer.html %}
-    </div>
-    {% include scripts.html %}
+	
+	<div class="main-wrapper">
+		{% include header.html %}
+		{% include banner.html %}
+		{% include about.html %}
+		{% include blog.html %}
+		{% include projects.html %}
+		{% include footer.html %}
+	</div>
+	
   </body>
 </html>
